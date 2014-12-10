@@ -41,6 +41,11 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "mean",
+    "mean.io",
+    "meanio",
+    "compass",
+    "sass"
   ]
 }
