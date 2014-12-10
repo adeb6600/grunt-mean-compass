@@ -1,6 +1,16 @@
 # grunt-mean-compass
+>Compile mean.io sass-compass files.
 
-> Compile mean.io sass-compass files.
+**compassGrunt** will locate all the `.scss` files inside the packages and will compile them.
+
+####For example:
+```
+packages/custom/pages/assets/sass/page.scss
+```
+will compile into:
+```
+packages/custom/pages/assets/css/page.scss
+```
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`, Grant-contrib-compass `~1.0.1`, and using [Mean.io](http://www.mean.io)
@@ -40,7 +50,6 @@ See options as described in [Grunt Compass](https://github.com/gruntjs/grunt-con
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
 
 ```js
 grunt.initConfig({
@@ -52,7 +61,7 @@ grunt.initConfig({
 ```
 
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+In this example, custom options are used to add the `grunt-compass` option of `sourcemap`.
 
 ```js
 grunt.initConfig({
