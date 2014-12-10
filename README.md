@@ -17,10 +17,10 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-mean-compass');
 ```
 
-## The "mean_compass" task
+## The "meanCompass" task
 
 ### Overview
-In your project's Gruntfile, add a section named `mean_compass` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `meanCompass` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
