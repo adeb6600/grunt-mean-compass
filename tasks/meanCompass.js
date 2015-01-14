@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         return filepath;
       });
 
-      var compassGrunt = {};
+      var lessGrunt = {};
       var i = 0;
       for(var cssDir in filesMap) {
         var sassDir = path.dirname(filesMap[cssDir][0]);
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
           relativeAssets: true,
           cssDir: cssDir
         });
-        compassGrunt['meanLess_'+i] = {
+        lessGrunt['meanLess_'+i] = {
           options: dirOptions
         };
         i+=1;
