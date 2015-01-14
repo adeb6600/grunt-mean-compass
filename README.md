@@ -1,11 +1,11 @@
 # grunt-mean-compass
->Compile mean.io sass-compass files.
+>Compile mean.io less files.
 
-**compassGrunt** will locate all the `.scss` files inside the packages and will compile them.
+**compassGrunt** will locate all the `.less` files inside the packages and will compile them.
 
 ####For example:
 ```
-packages/custom/pages/assets/sass/page.scss
+packages/custom/pages/assets/less/page.less
 ```
 will compile into:
 ```
@@ -13,7 +13,7 @@ packages/custom/pages/assets/css/page.scss
 ```
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5`, Grant-contrib-compass `~1.0.1`, and using [Mean.io](http://www.mean.io)
+This plugin requires Grunt `~0.4.5`, Grant-contrib-less `~1.0.1`, and using [Mean.io](http://www.mean.io)
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -24,13 +24,13 @@ npm install grunt-mean-compass --save-dev
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-mean-compass');
+grunt.loadNpmTasks('grunt-mean-less');
 ```
 
-## The "meanCompass" task
+## The "meanLess" task
 
 ### Overview
-In your project's Gruntfile, add a section named `meanCompass` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `meanLess` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
@@ -53,9 +53,9 @@ See options as described in [Grunt Compass](https://github.com/gruntjs/grunt-con
 
 ```js
 grunt.initConfig({
-  mean_compass: {
+  mean_less: {
     options: {},
-    files: ['!bower_components/**', '!packages/contrib/**', 'packages/**/public/**/*.scss'],
+    files: ['!bower_components/**', '!packages/contrib/**', 'packages/**/public/**/*.less'],
   },
 });
 ```
@@ -65,11 +65,11 @@ In this example, custom options are used to add the `grunt-compass` option of `s
 
 ```js
 grunt.initConfig({
-  mean_compass: {
+  mean_less: {
     options: {
       sourcemap: true
     },
-    files: ['!bower_components/**', '!packages/contrib/**', 'packages/**/public/**/*.scss'],
+    files: ['!bower_components/**', '!packages/contrib/**', 'packages/**/public/**/*.less'],
   },
 });
 ```
