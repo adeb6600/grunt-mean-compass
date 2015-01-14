@@ -29,11 +29,11 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    meanCompass: {
+    meanLess: {
       default_options: {
         options: {
         },
-        src: ['!bower_components/**', '!packages/contrib/**', 'packages/**/public/**/*.scss']
+        src: ['!bower_components/**', '!packages/contrib/**', 'packages/**/public/**/*.less']
       }
     }
 
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'mean_compass']);
+  grunt.registerTask('test', ['clean', 'mean_less']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
