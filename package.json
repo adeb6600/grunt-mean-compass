@@ -1,8 +1,8 @@
 {
-  "name": "grunt-mean-compass",
-  "description": "Compile mean sass-compass files.",
-  "version": "0.1.2",
-  "homepage": "https://github.com/AlmogBaku/grunt-mean-compass",
+  "name": "grunt-mean-less",
+  "description": "Compile mean less files.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/adeb6600/grunt-mean-compass",
   "author": {
     "name": "Almog Baku",
     "email": "almog.baku@gmail.com",
@@ -32,21 +32,20 @@
     "grunt-contrib-clean": "^0.5.0",
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt": "~0.4.5",
-    "grunt-contrib-compass": "~1.0.1"
+    "grunt-contrib-less": "~1.0.1"
   },
   "dependencies": {
-    "grunt-contrib-compass": "~1.0.1"
+    "grunt-contrib-less": "~1.0.1"
   },
   "peerDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-compass": "~1.0.1"
+    "grunt-contrib-less": "~1.0.1"
   },
   "keywords": [
     "gruntplugin",
     "mean",
     "mean.io",
     "meanio",
-    "compass",
-    "sass"
+    "less"
   ]
 }
