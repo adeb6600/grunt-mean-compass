@@ -3,8 +3,8 @@
 var path = require('path');
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.registerMultiTask('meanCompass', 'Compile mean sass-compass files.', function() {
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.registerMultiTask('meanLess', 'Compile mean less files.', function() {
     var options = this.options;
 
     // Iterate over all specified file groups.
@@ -47,16 +47,16 @@ module.exports = function(grunt) {
           relativeAssets: true,
           cssDir: cssDir
         });
-        compassGrunt['meanCompass_'+i] = {
+        compassGrunt['meanLess_'+i] = {
           options: dirOptions
         };
         i+=1;
       }
-      grunt.log.ok('Originated compass tasks.');
-      grunt.log.subhead('Start compass mean tasks tasks..');
+      grunt.log.ok('Originated less tasks.');
+      grunt.log.subhead('Start less mean tasks tasks..');
 
-      grunt.config('compass', compassGrunt);
-      grunt.task.run('compass');
+      grunt.config('less', lessGrunt);
+      grunt.task.run('less');
     });
   });
 
