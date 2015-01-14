@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/AlmogBaku/grunt-mean-compass.git"
+    "url": "git://github.com/adeb6600/grunt-mean-compass.git"
   },
   "bugs": {
-    "url": "https://github.com/AlmogBaku/grunt-mean-compass/issues"
+    "url": "https://github.com/adeb6600/grunt-mean-compass/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/AlmogBaku/grunt-mean-compass/blob/master/LICENSE-MIT"
+      "url": "https://github.com/adeb6600/grunt-mean-compass/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
